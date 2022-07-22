@@ -1,0 +1,141 @@
+ .first-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+.header{
+    display: flex;
+    transform: translateY(10px);
+    justify-content: space-between;
+}
+.header p {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-left: 30px;
+}
+button{
+    font-size: 20px;
+    background-color: #f36a2c;
+    text-transform: capitalize;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 50px;
+}
+.background{
+    margin-top: 20px;
+    background-color: #5c2e91;
+    height: 280px;
+    width: auto;
+}
+.head{
+    margin: auto;
+    width: 700px;
+    text-align: center;
+    transform: translateY(90px);
+}
+.head h2{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+.head strong{
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.head button{
+    font-size: 20px;
+    background-color: #f36a2c;;
+    margin-top: 20px;
+}
+.main-container{
+    height: auto;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    margin-top: 20px;
+    margin-left: 20px
+}
+.box-1{
+    transform: translateY(50px);
+    /* text-align: center; */
+    height: auto;
+    margin: auto;
+    width: 418px;
+    background-color: #45F6A8;
+    outline: 2px solid white;
+    box-shadow: 5px 5px 5px black;
+}
+.box-1 img{
+    margin-top: 10px;
+    transform: translateX(20px);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.flex-1{
+    display: flex;
+    justify-content: space-around;
+}
+.name{
+    margin: auto;
+    margin-left:40px;
+    width: 183px;
+    line-height: 20px;
+}
+.name h2{
+    font-size: 20px;
+    color: blue;
+    margin-bottom: 20px;
+}
+.name p{
+    font-size: 18px;
+    color: white;
+}
+.icon{
+    font-size: 30px;
+    margin-top: 20px;
+    margin: auto;
+    width: 50px;
+}
+.icon i{
+    margin-top: 10px;
+}
+.box-1:hover i{
+    color: yellow;
+}
+.flex-2{
+    display: flex;
+    justify-content: space-around;
+    height: 450px;
+}
+.pri-skills{
+    /* margin: auto; */
+    width: 189px;
+    margin-top: 30px;
+}
+.pri-skills h2{
+    width: auto;
+    color: blue;
+    font-size: 17px;
+    margin-left: 15px;
+    text-transform: capitalize;
+}
+.pri-skills p{
+    margin-left: 15px;
+    text-transform: capitalize;
+    font-size: 18px;
+    /* line-height: 15px; */
+    display: inline-block;
+}
+.line-1{
+    margin-top: 10px;
+    line-height: 25px;
+}
+.line-2{
+    margin-top: 10px;
+    line-height: 30px;
+}
