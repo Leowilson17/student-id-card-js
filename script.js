@@ -10,8 +10,8 @@ var profileData = [
         primaryLang3: 'JavaScript',
         salary: '2.5 L',
         degree: 'BE-',
-        year: '2019-',
-        percentage: '55%-',
+        year: '2018-',
+        percentage: '85%-',
         hsc: 'HSC-State Board-2016-62%',
         sslc: 'SSLC-State-Board-2014-76%',
     },
@@ -26,8 +26,8 @@ var profileData = [
         primaryLang3: 'JavaScript',
         salary: '3.5 L',
         degree: 'BSC-',
-        year: '2019-',
-        percentage: '55%-',
+        year: '2021-',
+        percentage: '90%-',
         hsc: 'HSC-State Board-2016-62%',
         sslc: 'SSLC-State-Board-2014-76%',
     },
@@ -42,8 +42,8 @@ var profileData = [
         primaryLang3: 'JavaScript',
         salary: '3.5 L',
         degree: 'BSC-',
-        year: '2019-',
-        percentage: '55%-',
+        year: '2018-',
+        percentage: '90%-',
         hsc: 'HSC-State Board-2016-62%',
         sslc: 'SSLC-State-Board-2014-76%',
     },
@@ -58,8 +58,8 @@ var profileData = [
         primaryLang3: 'JavaScript',
         salary: '3.5 L',
         degree: 'BE-',
-        year: '2019-',
-        percentage: '55%-',
+        year: '2021-',
+        percentage: '95%-',
         hsc: 'HSC-State Board-2016-62%',
         sslc: 'SSLC-State-Board-2014-76%',
     },
@@ -75,7 +75,7 @@ var profileData = [
         salary: '3.5 L',
         degree: 'BE-',
         year: '2019-',
-        percentage: '65%-',
+        percentage: '95%-',
         hsc: 'HSC-State Board-2016-62%',
         sslc: 'SSLC-State-Board-2014-76%',
     },
@@ -90,8 +90,8 @@ var profileData = [
         primaryLang3: 'JavaScript',
         salary: '3.5 L',
         degree: 'BCA-',
-        year: '2019-',
-        percentage: '55%-',
+        year: '2021-',
+        percentage: '90%-',
         hsc: 'HSC-State Board-2018-74%',
         sslc: 'SSLC-State-Board-2016-85%',
     },
@@ -108,7 +108,7 @@ var profileData = [
         salary: '3.5 L',
         degree: 'BE-',
         year: '2019-',
-        percentage: '55%-',
+        percentage: '90%-',
         hsc: 'HSC-State Board-2018-74%',
         sslc: 'SSLC-State-Board-2016-85%',
     }
@@ -291,11 +291,16 @@ filter_btn.addEventListener('change', function () {
     var y = filter_btn.value;
     var loop = function (fillterData) {
         var filterElement = fillterData;
-        // console.log(filterElement.degree);
-        if (filterElement.degree == y) {
-            // x.data = filterElement;
-            createBox(filterElement);
-        }
+        var arr = [filterElement.degree,filterElement.year,filterElement.percentage];
+        arr.forEach(index => 
+            {
+
+                if ( index == y) {
+                    console.log(filterElement.degree);
+                    // x.data = filterElement;
+                    createBox(filterElement);
+                }
+            });
     }
     profileData.forEach(loop);
 });
