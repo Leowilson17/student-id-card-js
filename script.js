@@ -79,7 +79,6 @@ var profileData = [
         hsc: 'HSC-State Board-2016-62%',
         sslc: 'SSLC-State-Board-2014-76%',
     },
-
     {
         img: '/img/my-img.jpeg',
         name: 'Leowilson',
@@ -91,6 +90,23 @@ var profileData = [
         primaryLang3: 'JavaScript',
         salary: '3.5 L',
         degree: 'BCA-',
+        year: '2019-',
+        percentage: '55%-',
+        hsc: 'HSC-State Board-2018-74%',
+        sslc: 'SSLC-State-Board-2016-85%',
+    },
+    {
+        
+        img: '/img/chithirai-img.jpeg',
+        name: 'Chithiraivel',
+        role: 'Fresher from Vembar',
+        gitlink: 'https://github.com/selva06092020',
+        resumelink: 'https://www.jobscan.co/wp-content/uploads/resume-upload-to-linkedin.png',
+        primaryLang1: 'HTML,',
+        primaryLang2: 'CSS,',
+        primaryLang3: 'JavaScript',
+        salary: '3.5 L',
+        degree: 'BE-',
         year: '2019-',
         percentage: '55%-',
         hsc: 'HSC-State Board-2018-74%',
@@ -268,7 +284,6 @@ profileData.forEach(createBox);
 
 // get filter-btn
 var filter_btn = document.getElementById('fil-select');
-// console.log(filter_btn);
 
 // filtet-btn change option
 filter_btn.addEventListener('change', function () {
@@ -280,7 +295,6 @@ filter_btn.addEventListener('change', function () {
         if (filterElement.degree == y) {
             // x.data = filterElement;
             createBox(filterElement);
-            flexDiv.append();
         }
     }
     profileData.forEach(loop);
