@@ -288,16 +288,14 @@ var filter_btn = document.getElementById('fil-select');
 // filtet-btn change option
 filter_btn.addEventListener('change', function () {
     flexDiv.innerHTML = '';
-    var y = filter_btn.value;
+    var filterUserSelection = filter_btn.value;
     var loop = function (fillterData) {
         var filterElement = fillterData;
         var arr = [filterElement.degree,filterElement.year,filterElement.percentage];
         arr.forEach(index => 
             {
-
-                if ( index == y) {
-                    console.log(filterElement.degree);
-                    // x.data = filterElement;
+                if ( index == filterUserSelection)
+                {
                     createBox(filterElement);
                 }
             });
@@ -310,5 +308,6 @@ filter_btn.addEventListener('change', function () {
  // const list = document.getElementById("first-div");
  // while (list.hasChildNodes()) {
     //     list.removeChild(list.firstChild);
+           // x.data = filterElement;
     // }
 
